@@ -1,0 +1,557 @@
+Running the Crew
+╭───────────────────────────────────────────────────────── Crew Execution Started ──────────────────────────────────────────────────────────╮
+│                                                                                                                                           │
+│  Crew Execution Started                                                                                                                   │
+│  Name: crew                                                                                                                               │
+│  ID: 19b8c942-caf6-45a6-b015-c5c1601b4f05                                                                                                 │
+│  Tool Args:                                                                                                                               │
+│                                                                                                                                           │
+│                                                                                                                                           │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 159142a4-a0e8-43df-8288-75054162b305
+│   Status: Executing Task...
+└── ✅ Knowledge Retrieval Completed╭───────────────────────────────────────────────────────── 📚 Retrieved Knowledge ──────────────────────────────────────────────────────────╮
+│                                                                                                                                           │
+│  Additional Information: Resumo da Página: Escrever e Atualizar PRDs                                                                      │
+│  Esta página é um guia detalhado sobre como escrever e atualizar Documentos de                                                            │
+│  Requisitos de Produto (PRDs), apresentando-os como documentos vivos que evoluem                                                          │
+│  ao longo do ciclo de desenvolvimento do produto.                                                                                         │
+│  Título: Escrever e atualizar PRDs                                                                                                        │
+│  Tempo de Leitura: 7 minutos                                                                                                              │
+│  Estrutura: 3 passos                                                                                                                      │
+│  Autores Principais:                                                                                                                      │
+│  ● Anand Subramani: SVP de Produto na Rula, professor de Gestão de Produto em                                                             │
+│  Stanford.                                                                                                                                │
+│  ● Jiaona Zhang: Chief Product Off...                                                                                                     │
+│                                                                                                                                           │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────────────────────── 🤖 Agent Started ─────────────────────────────────────────────────────────────╮
+│                                                                                                                                           │
+│  Agent: Technical Product Manager do time de plataforma Abstraction Layer                                                                 │
+│                                                                                                                                           │
+│  Task: Analise detalhadamente o problema de negócio recebido:                                                                             │
+│  # **Pedido de Produto: Melhoria na Experiência de Rastreamento de Pacotes**                                                              │
+│                                                                                                                                           │
+│  **Iniciativa:** Rastreamento Transparente                                                                                                │
+│                                                                                                                                           │
+│  **Product Manager:** (Nome do PM Fictício)                                                                                               │
+│                                                                                                                                           │
+│  **Data:** 13/07/2025                                                                                                                     │
+│                                                                                                                                           │
+│  ### **1. Contexto e Problema (O Porquê)**                                                                                                │
+│                                                                                                                                           │
+│  Após um processo de *Discovery*, identificamos que uma das maiores fontes de atrito na jornada do nosso cliente está na falta de         │
+│  clareza sobre o andamento de suas entregas. Atualmente, o processo para consultar o status de um pacote é complexo e as informações são  │
+│  apresentadas de forma pouco intuitiva.                                                                                                   │
+│                                                                                                                                           │
+│  **Dados Relevantes:**                                                                                                                    │
+│                                                                                                                                           │
+│  * **Causa Raiz:** Cerca de **75% dos nossos tickets** de suporte estão relacionados a dúvidas sobre entrega ("Onde está meu pacote?",    │
+│  "Qual o status da minha entrega?").                                                                                                      │
+│                                                                                                                                           │
+│  * **Impacto no Negócio:** Além do custo operacional com o time de suporte, essa fricção gera ansiedade no cliente, impactando            │
+│  negativamente a percepção da nossa marca e a chance de recompra.                                                                         │
+│                                                                                                                                           │
+│  **Objetivo Principal:**                                                                                                                  │
+│  Reduzir em, no mínimo, **80%** o volume de reclamações e tickets de suporte relacionados ao status de encomendas, melhorando a           │
+│  experiência do usuário e a confiança em nosso serviço.                                                                                   │
+│                                                                                                                                           │
+│  ### **2. Solução Proposta (O Quê)**                                                                                                      │
+│                                                                                                                                           │
+│  Propomos a reestruturação da tela "Meus Pacotes" para oferecer uma experiência de rastreamento proativa e centralizada. A ideia é que o  │
+│  cliente tenha acesso rápido às informações mais importantes sem esforço, em duas camadas de visualização.                                │
+│                                                                                                                                           │
+│  #### **2.1. Visão Geral (Lista de Pacotes)**                                                                                             │
+│                                                                                                                                           │
+│  Ao acessar a tela "Meus Pacotes", o cliente deve visualizar imediatamente uma lista com todas as suas encomendas ativas e                │
+│  recém-concluídas.                                                                                                                        │
+│                                                                                                                                           │
+│  **Campos Visíveis na Lista:**                                                                                                            │
+│                                                                                                                                           │
+│  * **Pacote:** Identificador principal do produto ou da encomenda (Ex: "Tênis Runner Pro").                                               │
+│                                                                                                                                           │
+│  * **Nº do Pedido:** Código único do pedido para referência.                                                                              │
+│                                                                                                                                           │
+│  * **Data da Compra:** Data em que o pedido foi efetuado.                                                                                 │
+│                                                                                                                                           │
+│  * **Último Status:** A atualização mais recente e simplificada do rastreamento (Ex: "Em trânsito", "Saiu para entrega", "Entregue").     │
+│                                                                                                                                           │
+│  #### **2.2. Visão Detalhada (Detalhes do Pacote)**                                                                                       │
+│                                                                                                                                           │
+│  Ao clicar em um item da lista, a tela deve, **sem carregar uma nova página**, expandir a visualização daquele pacote, revelando          │
+│  informações completas.                                                                                                                   │
+│                                                                                                                                           │
+│  **Campos Visíveis no Detalhe:**                                                                                                          │
+│                                                                                                                                           │
+│  * Todas as informações da visão geral.                                                                                                   │
+│                                                                                                                                           │
+│  * **Endereço de Entrega:** Para onde o pacote está sendo enviado.                                                                        │
+│                                                                                                                                           │
+│  * **Código de Rastreio:** O código completo, com um botão para copiar.                                                                   │
+│                                                                                                                                           │
+│  * **Histórico de Rastreamento:** Uma linha do tempo vertical, clara e visual, mostrando cada etapa do processo de entrega, da mais       │
+│  recente para a mais antiga. Cada etapa deve conter:                                                                                      │
+│                                                                                                                                           │
+│    * **Data e Hora**                                                                                                                      │
+│                                                                                                                                           │
+│    * **Localização** (Ex: "Centro de Distribuição, Cajamar - SP")                                                                         │
+│                                                                                                                                           │
+│    * **Status Detalhado** (Ex: "Objeto postado", "Objeto em trânsito para a unidade de tratamento", "Objeto saiu para entrega ao          │
+│  destinatário").                                                                                                                          │
+│                                                                                                                                           │
+│  ### **3. Impacto Esperado e Métricas de Sucesso**                                                                                        │
+│                                                                                                                                           │
+│  * **Métrica Primária:** Redução de tickets de suporte com o tema "Rastreamento/Entrega" em ≥ 80% após 30 dias do lançamento.             │
+│                                                                                                                                           │
+│  * **Métrica Secundária:** Aumento do CSAT (Customer Satisfaction Score) relacionado à experiência de entrega.                            │
+│                                                                                                                                           │
+│  * **Métrica de Engajamento:** Aumento no número de usuários únicos que acessam a tela "Meus Pacotes" por semana.                         │
+│  . Sua tarefa é evoluir a compreensão do problema em um PRD completo, seguindo o processo de 3 etapas da nossa base de conhecimento: 1.   │
+│  **Briefing do Problema:** Comece definindo a oportunidade, o público, as evidências e as métricas de sucesso iniciais para alinhar com   │
+│  a liderança. 2.  **Especificação do Produto:** Colabore com design e engenharia para detalhar o escopo, com histórias de usuário,        │
+│  requisitos funcionais e protótipos. 3.  **PRD Completo:** Finalize o documento com detalhes de execução, como o design final,            │
+│  implicações técnicas e um plano de lançamento. Consulte ativamente os documentos da base de conhecimento para guiar a estrutura e o      │
+│  conteúdo em cada fase.                                                                                                                   │
+│                                                                                                                                           │
+│                                                                                                                                           │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 159142a4-a0e8-43df-8288-75054162b305
+│   Status: Executing Task...
+└── ✅ Knowledge Retrieval Completed╭────────────────────────────────────────────────────────── ✅ Agent Final Answer ──────────────────────────────────────────────────────────╮
+│                                                                                                                                           │
+│  Agent: Technical Product Manager do time de plataforma Abstraction Layer                                                                 │
+│                                                                                                                                           │
+│  Final Answer:                                                                                                                            │
+│  {                                                                                                                                        │
+│    "research_points": [                                                                                                                   │
+│      {                                                                                                                                    │
+│        "topic": "Propósito e Evolução do PRD",                                                                                            │
+│        "findings": "O PRD serve como a fonte única de verdade para as equipes, evoluindo do discovery à entrega. Ele facilita o           │
+│  alinhamento, promove a colaboração e testa o raciocínio sobre o produto. Deve ser adaptado à fase de desenvolvimento (briefing,          │
+│  especificação, completo).",                                                                                                              │
+│        "relevance": "Essencial para estruturar o documento de forma iterativa e garantir que ele atenda às necessidades de diferentes     │
+│  fases do projeto, servindo como um guia central para a equipe de Abstraction Layer e seus consumidores (times de produto).",             │
+│        "sources": [                                                                                                                       │
+│          {                                                                                                                                │
+│            "document": "Resumo da Página: Escrever e Atualizar PRDs",                                                                     │
+│            "section": "Visão Geral"                                                                                                       │
+│          }                                                                                                                                │
+│        ]                                                                                                                                  │
+│      },                                                                                                                                   │
+│      {                                                                                                                                    │
+│        "topic": "As 3 Fases do Desenvolvimento do PRD",                                                                                   │
+│        "findings": "O guia de PRDs é dividido em três fases principais: 1) Briefing do Problema (descoberta), 2) Especificação de         │
+│  Produto (design), e 3) PRD Completo (entrega). Cada fase adiciona um nível de detalhe crescente.",                                       │
+│        "relevance": "Direciona a estruturação deste PRD, garantindo que ele progrida de uma visão de alto nível para detalhes de          │
+│  execução, conforme o ciclo de vida do produto. É a espinha dorsal da resposta.",                                                         │
+│        "sources": [                                                                                                                       │
+│          {                                                                                                                                │
+│            "document": "Resumo da Página: Escrever e Atualizar PRDs",                                                                     │
+│            "section": "Os 3 Passos para Desenvolver um PRD"                                                                               │
+│          }                                                                                                                                │
+│        ]                                                                                                                                  │
+│      },                                                                                                                                   │
+│      {                                                                                                                                    │
+│        "topic": "Conteúdo do Briefing do Problema (Fase 1)",                                                                              │
+│        "findings": "Deve conter: Oportunidade (problema, público, porquê), Evidências (dados validadores), Métricas de Sucesso            │
+│  (quantitativas e qualitativas), Hipóteses de Solução e Design. O foco é entender o problema e obter feedback da liderança.",             │
+│        "relevance": "Define a estrutura inicial da seção 'Contexto' do PRD, focando no 'porquê' e nos dados que justificam a iniciativa,  │
+│  crucial para o alinhamento de alto nível para a equipe de Abstraction Layer e stakeholders.",                                            │
+│        "sources": [                                                                                                                       │
+│          {                                                                                                                                │
+│            "document": "Resumo da Página: Escrever e Atualizar PRDs",                                                                     │
+│            "section": "Passo 1: Comece Definindo o Problema do Usuário"                                                                   │
+│          },                                                                                                                               │
+│          {                                                                                                                                │
+│            "document": "[Fase 0: Modelo de resumo da definição do problema]",                                                             │
+│            "section": "Espaço do problema, Clientes-alvo, Critérios de impacto e sucesso"                                                 │
+│          }                                                                                                                                │
+│        ]                                                                                                                                  │
+│      },                                                                                                                                   │
+│      {                                                                                                                                    │
+│        "topic": "Conteúdo da Especificação de Produto (Fase 2)",                                                                          │
+│        "findings": "Inclui: Recapitulação do Problema, Escopo (Histórias de usuário, requisitos funcionais, o que está fora de escopo),   │
+│  Design (fluxo e protótipos), e Riscos (suposições e questões em aberto). Recomenda-se envolver design e engenharia.",                    │
+│        "relevance": "Moldou a seção 'Escopo da Solução' e a parte inicial de 'Design e Experiência', direcionando a criação de histórias  │
+│  de usuário e requisitos funcionais sob a ótica da Abstraction Layer (foco em APIs, não UI final).",                                      │
+│        "sources": [                                                                                                                       │
+│          {                                                                                                                                │
+│            "document": "Resumo da Página: Escrever e Atualizar PRDs",                                                                     │
+│            "section": "Passo 2: Expanda para uma Especificação de Produto (Product Spec)"                                                 │
+│          }                                                                                                                                │
+│        ]                                                                                                                                  │
+│      },                                                                                                                                   │
+│      {                                                                                                                                    │
+│        "topic": "Conteúdo do PRD Completo (Fase 3)",                                                                                      │
+│        "findings": "Deve ter: Recapitulação do Briefing, Escopo Atualizado, Design Final (detalhes para engenharia), Implicações          │
+│  Técnicas, Plano de Lançamento, Plano de Desenvolvimento e Riscos atualizados. Foco nos detalhes de execução.",                           │
+│        "relevance": "Essencial para as seções 'Detalhes de Execução' e 'Riscos', garantindo que o PRD contenha informações pragmáticas    │
+│  para a engenharia da Abstraction Layer, como dependências de sistemas legados, estratégias de integração e cronogramas.",                │
+│        "sources": [                                                                                                                       │
+│          {                                                                                                                                │
+│            "document": "Resumo da Página: Escrever e Atualizar PRDs",                                                                     │
+│            "section": "Passo 3: Expanda com Detalhes de Execução"                                                                         │
+│          }                                                                                                                                │
+│        ]                                                                                                                                  │
+│      },                                                                                                                                   │
+│      {                                                                                                                                    │
+│        "topic": "Escopo e Foco do Time de Abstraction Layer",                                                                             │
+│        "findings": "Responsável por 'abstrair a complexidade técnica do core e fornecer uma interface simplificada para as equipes de     │
+│  produto', e 'criar soluções que sejam reutilizáveis e escaláveis, evitando soluções pontuais'. Evitar detalhes de implementação de       │
+│  engenharia.",                                                                                                                            │
+│        "relevance": "Fundamental para a definição do que está *dentro* e *fora* do escopo deste PRD. Assegura que os requisitos           │
+│  funcionais e as implicações técnicas estejam alinhados com a missão da equipe, focando na API e normalização de dados, e não na UI.",    │
+│        "sources": [                                                                                                                       │
+│          {                                                                                                                                │
+│            "document": "Instrução da Tarefa",                                                                                             │
+│            "section": "Restrições"                                                                                                        │
+│          }                                                                                                                                │
+│        ]                                                                                                                                  │
+│      }                                                                                                                                    │
+│    ],                                                                                                                                     │
+│    "summary": "## Documento de Requisitos de Produto (PRD): Melhoria na Experiência de Rastreamento de Pacotes\n\n**Iniciativa:**         │
+│  Rastreamento Transparente - Abstraction Layer\n\n**Product Manager:** [Seu Nome como PM Técnico da Abstraction Layer]\n\n**Data:**       │
+│  13/07/2025\n\n### **1. Contexto (Briefing do Problema)**\n\nEste PRD visa detalhar os requisitos para a equipe de Abstraction Layer,     │
+│  que atuará como a camada fundamental para viabilizar a iniciativa de 'Rastreamento Transparente'. Nosso objetivo é transformar a         │
+│  complexidade de diversas fontes de dados de rastreamento em uma interface unificada e simplificada para as equipes de produto que        │
+│  consomem nossa plataforma.\n\n*   **Oportunidade (O Problema e o Porquê):**\n    A falta de clareza e a dificuldade na consulta do       │
+│  status de entregas geram atrito significativo na jornada do cliente. A Abstraction Layer tem a oportunidade de consolidar e normalizar   │
+│  os dados de rastreamento de múltiplos sistemas legados e transportadoras, oferecendo uma API coesa. Isso permitirá que as equipes de     │
+│  produto construam experiências de rastreamento proativas e intuitivas, reduzindo a ansiedade do cliente e o custo operacional.\n\n*      │
+│  **Público-Alvo:**\n    *   **Clientes Internos Primários:** Equipes de Produto (e.g., Mobile, Web) que precisam de dados de              │
+│  rastreamento para criar as interfaces de usuário finais. Equipe de Suporte ao Cliente, que se beneficiará da redução do volume de        │
+│  tickets.\n    *   **Clientes Finais (Usuários da Plataforma):** Pessoas que fizeram compras e desejam acompanhar suas entregas de forma  │
+│  simples e transparente.\n\n*   **Evidências:**\n    *   **Causa Raiz:** 75% dos tickets de suporte atuais estão relacionados a dúvidas   │
+│  sobre entrega ('Onde está meu pacote?', 'Qual o status da minha entrega?').\n    *   **Impacto no Negócio:** Alto custo operacional com  │
+│  o time de suporte e impacto negativo na percepção da marca, resultando em menor chance de recompra.\n\n*   **Métricas de Sucesso (KPIs   │
+│  da Iniciativa - que serão habilitadas pela Abstraction Layer):**\n    *   **Métrica Primária:** Redução de, no mínimo, 80% no volume de  │
+│  reclamações e tickets de suporte relacionados ao status de encomendas após 30 dias do lançamento da interface de usuário habilitada      │
+│  pela Abstraction Layer.\n    *   **Métrica Secundária:** Aumento do CSAT (Customer Satisfaction Score) relacionado à experiência de      │
+│  entrega.\n    *   **Métrica de Engajamento:** Aumento no número de usuários únicos que acessam a tela 'Meus Pacotes' por semana (a ser   │
+│  monitorado pela equipe de produto front-end).\n    *   **Métricas de Plataforma (Internas da Abstraction Layer):** Tempo médio de        │
+│  resposta da API de rastreamento < 200ms; Uptime da API > 99.9%; Número de erros nas integrações com sistemas legados < 0.1%.\n\n###      │
+│  **2. Escopo da Solução (Especificação do Produto)**\n\nA equipe de Abstraction Layer será responsável por criar e manter uma camada de   │
+│  serviço que abstrai a complexidade dos sistemas de rastreamento subjacentes, fornecendo APIs padronizadas e performáticas para consumo   │
+│  pelas equipes de produto.\n\n*   **Requisitos Funcionais e Histórias de Usuário (Perspectiva da Abstraction Layer):**\n    *   **Como    │
+│  equipe de Produto (front-end), eu quero consultar uma lista de pacotes de um usuário** (ativos e recém-concluídos), **para que eu possa  │
+│  exibir uma visão geral consolidada.**\n        *   **API:** `GET /v1/users/{userId}/packages`\n        *   **Response (Lista de          │
+│  Pacotes):**\n            *   `package_id` (Identificador único do pacote na plataforma)\n            *   `order_number` (Número do       │
+│  pedido ao qual o pacote pertence)\n            *   `purchase_date` (Data da compra do pedido)\n            *   `simplified_status`       │
+│  (String padronizada: 'Em trânsito', 'Saiu para entrega', 'Entregue', 'Aguardando Coleta', 'Problema na Entrega', etc.)\n            *    │
+│  `last_update_timestamp` (Timestamp da última atualização do status)\n    *   **Como equipe de Produto (front-end), eu quero consultar    │
+│  os detalhes completos e o histórico de rastreamento de um pacote específico, para que eu possa exibir uma visão detalhada e uma linha    │
+│  do tempo clara.**\n        *   **API:** `GET /v1/packages/{packageId}/tracking`\n        *   **Response (Detalhes do Pacote):**\n        │
+│  *   `package_id`\n            *   `order_number`\n            *   `purchase_date`\n            *   `simplified_status`\n            *    │
+│  `delivery_address` (Endereço completo de entrega)\n            *   `tracking_code` (Código de rastreio completo da transportadora)\n     │
+│  *   `tracking_history` (Array de objetos, ordenada da mais recente para mais antiga):\n                *   `timestamp` (Data e Hora do   │
+│  evento)\n                *   `location` (Localização, ex: 'Centro de Distribuição, Cajamar - SP')\n                *                     │
+│  `detailed_status` (Status detalhado original da transportadora, ex: 'Objeto postado', 'Objeto em trânsito para a unidade de              │
+│  tratamento')\n    *   **Como Abstraction Layer, eu preciso me integrar com múltiplas fontes de dados de rastreamento** (e.g., Correios,  │
+│  Transportadora X, Transportadora Y, ERP interno de entregas), **para consolidar e normalizar as informações.**\n    *   **Como           │
+│  Abstraction Layer, eu preciso normalizar os status de rastreamento de diferentes fontes para um conjunto de 'simplified_status'          │
+│  padrão,** para garantir consistência para as equipes de produto.\n    *   **Como Abstraction Layer, eu preciso garantir alta             │
+│  disponibilidade e baixa latência das APIs,** para não impactar a experiência do usuário final.\n    *   **Como Abstraction Layer, eu     │
+│  preciso ter um mecanismo de cache eficiente** para otimizar a performance e reduzir a carga sobre os sistemas legados.\n\n*   **O que    │
+│  está Fora de Escopo (para a Equipe de Abstraction Layer):**\n    *   A implementação da interface do usuário (UI) da tela 'Meus          │
+│  Pacotes' ou qualquer outra tela do produto final. Isso é responsabilidade das equipes de produto (Mobile/Web).\n    *   A ativação de    │
+│  notificações proativas (e.g., SMS, e-mail, push notifications) sobre o status do rastreamento. A Abstraction Layer fornecerá os dados,   │
+│  mas a lógica e o disparo das notificações são de outros times.\n    *   Rastreamento de pedidos não vinculados a um usuário logado ou    │
+│  via mecanismos de busca pública de rastreio.\n    *   Funcionalidades além do rastreamento puro, como agendamento de entrega, re-envio,  │
+│  alteração de endereço ou resolução de problemas de entrega (que não seja a informação do status).\n    *   Integração com novas          │
+│  transportadoras que não sejam as identificadas como prioritárias na fase inicial de descoberta.\n\n### **3. Design e Experiência (Foco   │
+│  na API e Modelo de Dados)**\n\nNesta seção, o 'design' refere-se primariamente ao design da API (contratos, modelos de dados) e não à    │
+│  interface do usuário final, que é responsabilidade do time de produto front-end que consumirá esta camada.\n\n*   **Fluxo da             │
+│  Experiência do Consumidor (da API):**\n    1.  Equipe de produto (front-end) autentica-se na Abstraction Layer.\n    2.  Equipe de       │
+│  produto chama `GET /v1/users/{userId}/packages` para obter a lista de pacotes.\n    3.  Equipe de produto renderiza a lista de pacotes   │
+│  com o `simplified_status`.\n    4.  Quando o usuário final clica em um pacote na UI, a equipe de produto chama `GET                      │
+│  /v1/packages/{packageId}/tracking`.\n    5.  Equipe de produto renderiza os detalhes e o `tracking_history` em uma linha do tempo na     │
+│  UI, sem recarregar a página.\n\n*   **Protótipos e Design Final (Contratos de API e Modelos de Dados):**\n    *   Serão definidos e      │
+│  versionados os contratos OpenAPI/Swagger para as APIs acima, incluindo schemas JSON detalhados para requisições e respostas.\n    *      │
+│  Exemplo de `simplified_status` map: mapeamento de status brutos de diversas transportadoras para um conjunto finito de estados           │
+│  padronizados (e.g., 'Postado' -> 'Em Trânsito', 'Saiu para entrega' -> 'Saiu para Entrega'). Este mapeamento será uma responsabilidade   │
+│  da Abstraction Layer.\n    *   Exemplos de payloads JSON serão fornecidos para facilitar o desenvolvimento e testes das equipes de       │
+│  produto consumidoras.\n    *   Definição de códigos de erro padronizados e mensagens claras para as APIs da Abstraction Layer.\n\n###    │
+│  **4. Detalhes de Execução**\n\n*   **Implicações Técnicas e Dependências (para Abstraction Layer):**\n    *   **Identificação de         │
+│  Fontes:** Mapeamento completo e priorização das fontes de dados de rastreamento existentes (e.g., sistema ERP legado, APIs de Correios,  │
+│  APIs de Transportadoras Parceiras).\n    *   **Conectores/Adaptadores:** Desenvolvimento de módulos independentes para cada fonte de     │
+│  dados, capazes de consumir diferentes formatos (REST, SOAP, FTP de arquivos, DB direct access, etc.) e traduzir para o modelo de dados   │
+│  canônico da Abstraction Layer.\n    *   **Modelo de Dados Canônico:** Definição rigorosa de um modelo de dados interno para eventos de   │
+│  rastreamento, endereços, status, etc., que será a base para a normalização.\n    *   **Lógica de Normalização:** Implementação de        │
+│  regras de negócio para padronizar os `simplified_status` e consolidar informações de diferentes fontes para um mesmo pacote.\n    *      │
+│  **Performance e Escalabilidade:** Implementação de estratégias de cache (e.g., Redis) para dados de rastreamento frequentemente          │
+│  acessados e de mecanismo de *rate limiting* e *circuit breaker* para proteção contra sobrecarga dos sistemas legados.\n    *             │
+│  **Autenticação/Autorização:** Implementação de mecanismos seguros para que as equipes de produto possam consumir as APIs (e.g., OAuth2,  │
+│  API Keys).\n    *   **Monitoramento:** Configuração de métricas de performance (latência, erros, volume de requisições) e logs           │
+│  detalhados para cada integração e endpoint da API.\n    *   **Versionamento de API:** Plano para versionamento (`/v1/`) para permitir    │
+│  futuras evoluções sem quebrar os consumidores existentes.\n    *   **Dependências:**\n        *   **Equipe de Core/Sistemas Legados:**   │
+│  Necessidade de acesso e documentação das APIs/Bancos de dados dos sistemas de rastreamento existentes. Acordos de SLA para               │
+│  disponibilidade e performance das fontes de dados.\n        *   **Equipe de Produto Front-end:** Colaboração para validação dos          │
+│  contratos de API e cronograma de consumo.\n        *   **Equipe de Dados/Analytics:** Definição conjunta de eventos de telemetria para   │
+│  as métricas de sucesso.\n\n*   **Plano de Lançamento (Go-to-Market - GTM):**\n    *   **Fase 1 (Alpha Interna):** Lançamento das APIs    │
+│  para consumo por uma equipe de produto piloto para validação inicial e feedback. (Mês 3)\n    *   **Fase 2 (Beta Controlada):**          │
+│  Liberação da nova experiência de rastreamento (habilitada pela Abstraction Layer) para um grupo de usuários selecionados (e.g., 5-10%    │
+│  da base), com monitoramento intensivo das métricas de negócio e plataforma. (Mês 4)\n    *   **Fase 3 (Lançamento Completo):** Rollout   │
+│  gradual para 100% da base de usuários, monitorando continuamente o impacto nas métricas de suporte e CSAT. (Mês 5)\n    *                │
+│  **Comunicação:** Elaboração de documentação técnica clara e exemplos de uso para as equipes de produto consumidoras. Treinamento para o  │
+│  time de suporte sobre as novas capacidades de rastreamento.\n\n*   **Plano de Desenvolvimento (Marcos Principais):**\n    *   **Mês      │
+│  1:** Discovery técnico detalhado das fontes de dados de rastreamento legadas. Definição do Modelo de Dados Canônico e Contratos de API   │
+│  iniciais (Alpha).\n    *   **Mês 2:** Desenvolvimento e testes de conectores para as 2-3 transportadoras/sistemas legados de maior       │
+│  volume de pacotes. Implementação da API de listagem de pacotes (`/v1/users/{userId}/packages`).\n    *   **Mês 3:** Implementação da     │
+│  API de detalhes de rastreamento (`/v1/packages/{packageId}/tracking`). Implementação da lógica de normalização de status e cache.        │
+│  Início dos testes de integração com a equipe de produto piloto.\n    *   **Mês 4:** Refinamento e otimização de performance. Testes de   │
+│  carga e segurança. Preparação para lançamento Beta.\n    *   **Mês 5:** Lançamento gradual para produção e monitoramento                 │
+│  pós-lançamento.\n\n### **5. Riscos**\n\n*   **Técnicos:**\n    *   **Qualidade e Disponibilidade dos Dados Legados:** As fontes de       │
+│  dados de rastreamento existentes podem ser inconsistentes, incompletas ou ter baixa disponibilidade, impactando a confiabilidade da      │
+│  Abstraction Layer. **Mitigação:** Investimento em monitoramento proativo das fontes, implementação de retries e fallback strategies,     │
+│  comunicação clara de limitações para os times de produto.\n    *   **Complexidade da Normalização:** A variação de status e formatos     │
+│  entre as transportadoras pode ser maior que o esperado, exigindo lógica de normalização complexa e sujeita a erros. **Mitigação:**       │
+│  Abordagem iterativa de normalização, começando com os casos mais comuns e refinando com feedback, uso de testes automatizados            │
+│  extensivos para mapeamentos.\n    *   **Performance da Agregação:** A agregação de dados de múltiplas fontes para um único pacote pode   │
+│  gerar latência indesejável. **Mitigação:** Implementação de estratégias de cache agressivas, otimização de consultas e avaliação de      │
+│  tecnologias de processamento de dados em tempo real, se necessário.\n    *   **Dependência de Terceiros:** Mudanças inesperadas nas      │
+│  APIs ou serviços das transportadoras podem quebrar as integrações da Abstraction Layer. **Mitigação:** Monitoramento constante das APIs  │
+│  de terceiros, notificação sobre mudanças de contrato, e design de adaptadores flexíveis.\n\n*   **De Produto (para Abstraction           │
+│  Layer):**\n    *   **Adoção Lenta da API:** As equipes de produto podem demorar a adotar a nova API devido a outras prioridades ou       │
+│  complexidade de migração. **Mitigação:** Documentação excelente, suporte dedicado, showcases e alinhamento de roadmap.\n    *            │
+│  **Modelo de Dados Inflexível:** O modelo de dados canônico pode não ser robusto o suficiente para futuras funcionalidades ou novas       │
+│  fontes de dados. **Mitigação:** Design de modelo extensível, planejamento de versionamento de API, e validação com potenciais casos de   │
+│  uso futuros.\n\n*   **De Negócio (geral, mas que a AL precisa estar ciente):**\n    *   **Não Redução Total de Tickets:** Se o problema  │
+│  raiz não for *apenas* a falta de informação, mas a *qualidade* ou *velocidade* da entrega em si, a redução de tickets pode não atingir   │
+│  80%. **Mitigação:** Medir a satisfação do cliente com a *informação* fornecida, e não apenas o volume de tickets. Compartilhar insights  │
+│  com o time de logística e operações.\n"                                                                                                  │
+│  }                                                                                                                                        │
+│                                                                                                                                           │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 159142a4-a0e8-43df-8288-75054162b305
+│   Assigned to: Technical Product Manager do time de plataforma Abstraction Layer
+│   
+│   Status: ✅ Completed
+└── ✅ Knowledge Retrieval Completed╭───────────────────────────────────────────────────────────── Task Completion ─────────────────────────────────────────────────────────────╮
+│                                                                                                                                           │
+│  Task Completed                                                                                                                           │
+│  Name: 159142a4-a0e8-43df-8288-75054162b305                                                                                               │
+│  Agent: Technical Product Manager do time de plataforma Abstraction Layer                                                                 │
+│                                                                                                                                           │
+│  Tool Args:                                                                                                                               │
+│                                                                                                                                           │
+│                                                                                                                                           │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭───────────────────────────────────────────────────────────── Crew Completion ─────────────────────────────────────────────────────────────╮
+│                                                                                                                                           │
+│  Crew Execution Completed                                                                                                                 │
+│  Name: crew                                                                                                                               │
+│  ID: 19b8c942-caf6-45a6-b015-c5c1601b4f05                                                                                                 │
+│  Tool Args:                                                                                                                               │
+│  Final Output: {                                                                                                                          │
+│    "research_points": [                                                                                                                   │
+│      {                                                                                                                                    │
+│        "topic": "Propósito e Evolução do PRD",                                                                                            │
+│        "findings": "O PRD serve como a fonte única de verdade para as equipes, evoluindo do discovery à entrega. Ele facilita o           │
+│  alinhamento, promove a colaboração e testa o raciocínio sobre o produto. Deve ser adaptado à fase de desenvolvimento (briefing,          │
+│  especificação, completo).",                                                                                                              │
+│        "relevance": "Essencial para estruturar o documento de forma iterativa e garantir que ele atenda às necessidades de diferentes     │
+│  fases do projeto, servindo como um guia central para a equipe de Abstraction Layer e seus consumidores (times de produto).",             │
+│        "sources": [                                                                                                                       │
+│          {                                                                                                                                │
+│            "document": "Resumo da Página: Escrever e Atualizar PRDs",                                                                     │
+│            "section": "Visão Geral"                                                                                                       │
+│          }                                                                                                                                │
+│        ]                                                                                                                                  │
+│      },                                                                                                                                   │
+│      {                                                                                                                                    │
+│        "topic": "As 3 Fases do Desenvolvimento do PRD",                                                                                   │
+│        "findings": "O guia de PRDs é dividido em três fases principais: 1) Briefing do Problema (descoberta), 2) Especificação de         │
+│  Produto (design), e 3) PRD Completo (entrega). Cada fase adiciona um nível de detalhe crescente.",                                       │
+│        "relevance": "Direciona a estruturação deste PRD, garantindo que ele progrida de uma visão de alto nível para detalhes de          │
+│  execução, conforme o ciclo de vida do produto. É a espinha dorsal da resposta.",                                                         │
+│        "sources": [                                                                                                                       │
+│          {                                                                                                                                │
+│            "document": "Resumo da Página: Escrever e Atualizar PRDs",                                                                     │
+│            "section": "Os 3 Passos para Desenvolver um PRD"                                                                               │
+│          }                                                                                                                                │
+│        ]                                                                                                                                  │
+│      },                                                                                                                                   │
+│      {                                                                                                                                    │
+│        "topic": "Conteúdo do Briefing do Problema (Fase 1)",                                                                              │
+│        "findings": "Deve conter: Oportunidade (problema, público, porquê), Evidências (dados validadores), Métricas de Sucesso            │
+│  (quantitativas e qualitativas), Hipóteses de Solução e Design. O foco é entender o problema e obter feedback da liderança.",             │
+│        "relevance": "Define a estrutura inicial da seção 'Contexto' do PRD, focando no 'porquê' e nos dados que justificam a iniciativa,  │
+│  crucial para o alinhamento de alto nível para a equipe de Abstraction Layer e stakeholders.",                                            │
+│        "sources": [                                                                                                                       │
+│          {                                                                                                                                │
+│            "document": "Resumo da Página: Escrever e Atualizar PRDs",                                                                     │
+│            "section": "Passo 1: Comece Definindo o Problema do Usuário"                                                                   │
+│          },                                                                                                                               │
+│          {                                                                                                                                │
+│            "document": "[Fase 0: Modelo de resumo da definição do problema]",                                                             │
+│            "section": "Espaço do problema, Clientes-alvo, Critérios de impacto e sucesso"                                                 │
+│          }                                                                                                                                │
+│        ]                                                                                                                                  │
+│      },                                                                                                                                   │
+│      {                                                                                                                                    │
+│        "topic": "Conteúdo da Especificação de Produto (Fase 2)",                                                                          │
+│        "findings": "Inclui: Recapitulação do Problema, Escopo (Histórias de usuário, requisitos funcionais, o que está fora de escopo),   │
+│  Design (fluxo e protótipos), e Riscos (suposições e questões em aberto). Recomenda-se envolver design e engenharia.",                    │
+│        "relevance": "Moldou a seção 'Escopo da Solução' e a parte inicial de 'Design e Experiência', direcionando a criação de histórias  │
+│  de usuário e requisitos funcionais sob a ótica da Abstraction Layer (foco em APIs, não UI final).",                                      │
+│        "sources": [                                                                                                                       │
+│          {                                                                                                                                │
+│            "document": "Resumo da Página: Escrever e Atualizar PRDs",                                                                     │
+│            "section": "Passo 2: Expanda para uma Especificação de Produto (Product Spec)"                                                 │
+│          }                                                                                                                                │
+│        ]                                                                                                                                  │
+│      },                                                                                                                                   │
+│      {                                                                                                                                    │
+│        "topic": "Conteúdo do PRD Completo (Fase 3)",                                                                                      │
+│        "findings": "Deve ter: Recapitulação do Briefing, Escopo Atualizado, Design Final (detalhes para engenharia), Implicações          │
+│  Técnicas, Plano de Lançamento, Plano de Desenvolvimento e Riscos atualizados. Foco nos detalhes de execução.",                           │
+│        "relevance": "Essencial para as seções 'Detalhes de Execução' e 'Riscos', garantindo que o PRD contenha informações pragmáticas    │
+│  para a engenharia da Abstraction Layer, como dependências de sistemas legados, estratégias de integração e cronogramas.",                │
+│        "sources": [                                                                                                                       │
+│          {                                                                                                                                │
+│            "document": "Resumo da Página: Escrever e Atualizar PRDs",                                                                     │
+│            "section": "Passo 3: Expanda com Detalhes de Execução"                                                                         │
+│          }                                                                                                                                │
+│        ]                                                                                                                                  │
+│      },                                                                                                                                   │
+│      {                                                                                                                                    │
+│        "topic": "Escopo e Foco do Time de Abstraction Layer",                                                                             │
+│        "findings": "Responsável por 'abstrair a complexidade técnica do core e fornecer uma interface simplificada para as equipes de     │
+│  produto', e 'criar soluções que sejam reutilizáveis e escaláveis, evitando soluções pontuais'. Evitar detalhes de implementação de       │
+│  engenharia.",                                                                                                                            │
+│        "relevance": "Fundamental para a definição do que está *dentro* e *fora* do escopo deste PRD. Assegura que os requisitos           │
+│  funcionais e as implicações técnicas estejam alinhados com a missão da equipe, focando na API e normalização de dados, e não na UI.",    │
+│        "sources": [                                                                                                                       │
+│          {                                                                                                                                │
+│            "document": "Instrução da Tarefa",                                                                                             │
+│            "section": "Restrições"                                                                                                        │
+│          }                                                                                                                                │
+│        ]                                                                                                                                  │
+│      }                                                                                                                                    │
+│    ],                                                                                                                                     │
+│    "summary": "## Documento de Requisitos de Produto (PRD): Melhoria na Experiência de Rastreamento de Pacotes\n\n**Iniciativa:**         │
+│  Rastreamento Transparente - Abstraction Layer\n\n**Product Manager:** [Seu Nome como PM Técnico da Abstraction Layer]\n\n**Data:**       │
+│  13/07/2025\n\n### **1. Contexto (Briefing do Problema)**\n\nEste PRD visa detalhar os requisitos para a equipe de Abstraction Layer,     │
+│  que atuará como a camada fundamental para viabilizar a iniciativa de 'Rastreamento Transparente'. Nosso objetivo é transformar a         │
+│  complexidade de diversas fontes de dados de rastreamento em uma interface unificada e simplificada para as equipes de produto que        │
+│  consomem nossa plataforma.\n\n*   **Oportunidade (O Problema e o Porquê):**\n    A falta de clareza e a dificuldade na consulta do       │
+│  status de entregas geram atrito significativo na jornada do cliente. A Abstraction Layer tem a oportunidade de consolidar e normalizar   │
+│  os dados de rastreamento de múltiplos sistemas legados e transportadoras, oferecendo uma API coesa. Isso permitirá que as equipes de     │
+│  produto construam experiências de rastreamento proativas e intuitivas, reduzindo a ansiedade do cliente e o custo operacional.\n\n*      │
+│  **Público-Alvo:**\n    *   **Clientes Internos Primários:** Equipes de Produto (e.g., Mobile, Web) que precisam de dados de              │
+│  rastreamento para criar as interfaces de usuário finais. Equipe de Suporte ao Cliente, que se beneficiará da redução do volume de        │
+│  tickets.\n    *   **Clientes Finais (Usuários da Plataforma):** Pessoas que fizeram compras e desejam acompanhar suas entregas de forma  │
+│  simples e transparente.\n\n*   **Evidências:**\n    *   **Causa Raiz:** 75% dos tickets de suporte atuais estão relacionados a dúvidas   │
+│  sobre entrega ('Onde está meu pacote?', 'Qual o status da minha entrega?').\n    *   **Impacto no Negócio:** Alto custo operacional com  │
+│  o time de suporte e impacto negativo na percepção da marca, resultando em menor chance de recompra.\n\n*   **Métricas de Sucesso (KPIs   │
+│  da Iniciativa - que serão habilitadas pela Abstraction Layer):**\n    *   **Métrica Primária:** Redução de, no mínimo, 80% no volume de  │
+│  reclamações e tickets de suporte relacionados ao status de encomendas após 30 dias do lançamento da interface de usuário habilitada      │
+│  pela Abstraction Layer.\n    *   **Métrica Secundária:** Aumento do CSAT (Customer Satisfaction Score) relacionado à experiência de      │
+│  entrega.\n    *   **Métrica de Engajamento:** Aumento no número de usuários únicos que acessam a tela 'Meus Pacotes' por semana (a ser   │
+│  monitorado pela equipe de produto front-end).\n    *   **Métricas de Plataforma (Internas da Abstraction Layer):** Tempo médio de        │
+│  resposta da API de rastreamento < 200ms; Uptime da API > 99.9%; Número de erros nas integrações com sistemas legados < 0.1%.\n\n###      │
+│  **2. Escopo da Solução (Especificação do Produto)**\n\nA equipe de Abstraction Layer será responsável por criar e manter uma camada de   │
+│  serviço que abstrai a complexidade dos sistemas de rastreamento subjacentes, fornecendo APIs padronizadas e performáticas para consumo   │
+│  pelas equipes de produto.\n\n*   **Requisitos Funcionais e Histórias de Usuário (Perspectiva da Abstraction Layer):**\n    *   **Como    │
+│  equipe de Produto (front-end), eu quero consultar uma lista de pacotes de um usuário** (ativos e recém-concluídos), **para que eu possa  │
+│  exibir uma visão geral consolidada.**\n        *   **API:** `GET /v1/users/{userId}/packages`\n        *   **Response (Lista de          │
+│  Pacotes):**\n            *   `package_id` (Identificador único do pacote na plataforma)\n            *   `order_number` (Número do       │
+│  pedido ao qual o pacote pertence)\n            *   `purchase_date` (Data da compra do pedido)\n            *   `simplified_status`       │
+│  (String padronizada: 'Em trânsito', 'Saiu para entrega', 'Entregue', 'Aguardando Coleta', 'Problema na Entrega', etc.)\n            *    │
+│  `last_update_timestamp` (Timestamp da última atualização do status)\n    *   **Como equipe de Produto (front-end), eu quero consultar    │
+│  os detalhes completos e o histórico de rastreamento de um pacote específico, para que eu possa exibir uma visão detalhada e uma linha    │
+│  do tempo clara.**\n        *   **API:** `GET /v1/packages/{packageId}/tracking`\n        *   **Response (Detalhes do Pacote):**\n        │
+│  *   `package_id`\n            *   `order_number`\n            *   `purchase_date`\n            *   `simplified_status`\n            *    │
+│  `delivery_address` (Endereço completo de entrega)\n            *   `tracking_code` (Código de rastreio completo da transportadora)\n     │
+│  *   `tracking_history` (Array de objetos, ordenada da mais recente para mais antiga):\n                *   `timestamp` (Data e Hora do   │
+│  evento)\n                *   `location` (Localização, ex: 'Centro de Distribuição, Cajamar - SP')\n                *                     │
+│  `detailed_status` (Status detalhado original da transportadora, ex: 'Objeto postado', 'Objeto em trânsito para a unidade de              │
+│  tratamento')\n    *   **Como Abstraction Layer, eu preciso me integrar com múltiplas fontes de dados de rastreamento** (e.g., Correios,  │
+│  Transportadora X, Transportadora Y, ERP interno de entregas), **para consolidar e normalizar as informações.**\n    *   **Como           │
+│  Abstraction Layer, eu preciso normalizar os status de rastreamento de diferentes fontes para um conjunto de 'simplified_status'          │
+│  padrão,** para garantir consistência para as equipes de produto.\n    *   **Como Abstraction Layer, eu preciso garantir alta             │
+│  disponibilidade e baixa latência das APIs,** para não impactar a experiência do usuário final.\n    *   **Como Abstraction Layer, eu     │
+│  preciso ter um mecanismo de cache eficiente** para otimizar a performance e reduzir a carga sobre os sistemas legados.\n\n*   **O que    │
+│  está Fora de Escopo (para a Equipe de Abstraction Layer):**\n    *   A implementação da interface do usuário (UI) da tela 'Meus          │
+│  Pacotes' ou qualquer outra tela do produto final. Isso é responsabilidade das equipes de produto (Mobile/Web).\n    *   A ativação de    │
+│  notificações proativas (e.g., SMS, e-mail, push notifications) sobre o status do rastreamento. A Abstraction Layer fornecerá os dados,   │
+│  mas a lógica e o disparo das notificações são de outros times.\n    *   Rastreamento de pedidos não vinculados a um usuário logado ou    │
+│  via mecanismos de busca pública de rastreio.\n    *   Funcionalidades além do rastreamento puro, como agendamento de entrega, re-envio,  │
+│  alteração de endereço ou resolução de problemas de entrega (que não seja a informação do status).\n    *   Integração com novas          │
+│  transportadoras que não sejam as identificadas como prioritárias na fase inicial de descoberta.\n\n### **3. Design e Experiência (Foco   │
+│  na API e Modelo de Dados)**\n\nNesta seção, o 'design' refere-se primariamente ao design da API (contratos, modelos de dados) e não à    │
+│  interface do usuário final, que é responsabilidade do time de produto front-end que consumirá esta camada.\n\n*   **Fluxo da             │
+│  Experiência do Consumidor (da API):**\n    1.  Equipe de produto (front-end) autentica-se na Abstraction Layer.\n    2.  Equipe de       │
+│  produto chama `GET /v1/users/{userId}/packages` para obter a lista de pacotes.\n    3.  Equipe de produto renderiza a lista de pacotes   │
+│  com o `simplified_status`.\n    4.  Quando o usuário final clica em um pacote na UI, a equipe de produto chama `GET                      │
+│  /v1/packages/{packageId}/tracking`.\n    5.  Equipe de produto renderiza os detalhes e o `tracking_history` em uma linha do tempo na     │
+│  UI, sem recarregar a página.\n\n*   **Protótipos e Design Final (Contratos de API e Modelos de Dados):**\n    *   Serão definidos e      │
+│  versionados os contratos OpenAPI/Swagger para as APIs acima, incluindo schemas JSON detalhados para requisições e respostas.\n    *      │
+│  Exemplo de `simplified_status` map: mapeamento de status brutos de diversas transportadoras para um conjunto finito de estados           │
+│  padronizados (e.g., 'Postado' -> 'Em Trânsito', 'Saiu para entrega' -> 'Saiu para Entrega'). Este mapeamento será uma responsabilidade   │
+│  da Abstraction Layer.\n    *   Exemplos de payloads JSON serão fornecidos para facilitar o desenvolvimento e testes das equipes de       │
+│  produto consumidoras.\n    *   Definição de códigos de erro padronizados e mensagens claras para as APIs da Abstraction Layer.\n\n###    │
+│  **4. Detalhes de Execução**\n\n*   **Implicações Técnicas e Dependências (para Abstraction Layer):**\n    *   **Identificação de         │
+│  Fontes:** Mapeamento completo e priorização das fontes de dados de rastreamento existentes (e.g., sistema ERP legado, APIs de Correios,  │
+│  APIs de Transportadoras Parceiras).\n    *   **Conectores/Adaptadores:** Desenvolvimento de módulos independentes para cada fonte de     │
+│  dados, capazes de consumir diferentes formatos (REST, SOAP, FTP de arquivos, DB direct access, etc.) e traduzir para o modelo de dados   │
+│  canônico da Abstraction Layer.\n    *   **Modelo de Dados Canônico:** Definição rigorosa de um modelo de dados interno para eventos de   │
+│  rastreamento, endereços, status, etc., que será a base para a normalização.\n    *   **Lógica de Normalização:** Implementação de        │
+│  regras de negócio para padronizar os `simplified_status` e consolidar informações de diferentes fontes para um mesmo pacote.\n    *      │
+│  **Performance e Escalabilidade:** Implementação de estratégias de cache (e.g., Redis) para dados de rastreamento frequentemente          │
+│  acessados e de mecanismo de *rate limiting* e *circuit breaker* para proteção contra sobrecarga dos sistemas legados.\n    *             │
+│  **Autenticação/Autorização:** Implementação de mecanismos seguros para que as equipes de produto possam consumir as APIs (e.g., OAuth2,  │
+│  API Keys).\n    *   **Monitoramento:** Configuração de métricas de performance (latência, erros, volume de requisições) e logs           │
+│  detalhados para cada integração e endpoint da API.\n    *   **Versionamento de API:** Plano para versionamento (`/v1/`) para permitir    │
+│  futuras evoluções sem quebrar os consumidores existentes.\n    *   **Dependências:**\n        *   **Equipe de Core/Sistemas Legados:**   │
+│  Necessidade de acesso e documentação das APIs/Bancos de dados dos sistemas de rastreamento existentes. Acordos de SLA para               │
+│  disponibilidade e performance das fontes de dados.\n        *   **Equipe de Produto Front-end:** Colaboração para validação dos          │
+│  contratos de API e cronograma de consumo.\n        *   **Equipe de Dados/Analytics:** Definição conjunta de eventos de telemetria para   │
+│  as métricas de sucesso.\n\n*   **Plano de Lançamento (Go-to-Market - GTM):**\n    *   **Fase 1 (Alpha Interna):** Lançamento das APIs    │
+│  para consumo por uma equipe de produto piloto para validação inicial e feedback. (Mês 3)\n    *   **Fase 2 (Beta Controlada):**          │
+│  Liberação da nova experiência de rastreamento (habilitada pela Abstraction Layer) para um grupo de usuários selecionados (e.g., 5-10%    │
+│  da base), com monitoramento intensivo das métricas de negócio e plataforma. (Mês 4)\n    *   **Fase 3 (Lançamento Completo):** Rollout   │
+│  gradual para 100% da base de usuários, monitorando continuamente o impacto nas métricas de suporte e CSAT. (Mês 5)\n    *                │
+│  **Comunicação:** Elaboração de documentação técnica clara e exemplos de uso para as equipes de produto consumidoras. Treinamento para o  │
+│  time de suporte sobre as novas capacidades de rastreamento.\n\n*   **Plano de Desenvolvimento (Marcos Principais):**\n    *   **Mês      │
+│  1:** Discovery técnico detalhado das fontes de dados de rastreamento legadas. Definição do Modelo de Dados Canônico e Contratos de API   │
+│  iniciais (Alpha).\n    *   **Mês 2:** Desenvolvimento e testes de conectores para as 2-3 transportadoras/sistemas legados de maior       │
+│  volume de pacotes. Implementação da API de listagem de pacotes (`/v1/users/{userId}/packages`).\n    *   **Mês 3:** Implementação da     │
+│  API de detalhes de rastreamento (`/v1/packages/{packageId}/tracking`). Implementação da lógica de normalização de status e cache.        │
+│  Início dos testes de integração com a equipe de produto piloto.\n    *   **Mês 4:** Refinamento e otimização de performance. Testes de   │
+│  carga e segurança. Preparação para lançamento Beta.\n    *   **Mês 5:** Lançamento gradual para produção e monitoramento                 │
+│  pós-lançamento.\n\n### **5. Riscos**\n\n*   **Técnicos:**\n    *   **Qualidade e Disponibilidade dos Dados Legados:** As fontes de       │
+│  dados de rastreamento existentes podem ser inconsistentes, incompletas ou ter baixa disponibilidade, impactando a confiabilidade da      │
+│  Abstraction Layer. **Mitigação:** Investimento em monitoramento proativo das fontes, implementação de retries e fallback strategies,     │
+│  comunicação clara de limitações para os times de produto.\n    *   **Complexidade da Normalização:** A variação de status e formatos     │
+│  entre as transportadoras pode ser maior que o esperado, exigindo lógica de normalização complexa e sujeita a erros. **Mitigação:**       │
+│  Abordagem iterativa de normalização, começando com os casos mais comuns e refinando com feedback, uso de testes automatizados            │
+│  extensivos para mapeamentos.\n    *   **Performance da Agregação:** A agregação de dados de múltiplas fontes para um único pacote pode   │
+│  gerar latência indesejável. **Mitigação:** Implementação de estratégias de cache agressivas, otimização de consultas e avaliação de      │
+│  tecnologias de processamento de dados em tempo real, se necessário.\n    *   **Dependência de Terceiros:** Mudanças inesperadas nas      │
+│  APIs ou serviços das transportadoras podem quebrar as integrações da Abstraction Layer. **Mitigação:** Monitoramento constante das APIs  │
+│  de terceiros, notificação sobre mudanças de contrato, e design de adaptadores flexíveis.\n\n*   **De Produto (para Abstraction           │
+│  Layer):**\n    *   **Adoção Lenta da API:** As equipes de produto podem demorar a adotar a nova API devido a outras prioridades ou       │
+│  complexidade de migração. **Mitigação:** Documentação excelente, suporte dedicado, showcases e alinhamento de roadmap.\n    *            │
+│  **Modelo de Dados Inflexível:** O modelo de dados canônico pode não ser robusto o suficiente para futuras funcionalidades ou novas       │
+│  fontes de dados. **Mitigação:** Design de modelo extensível, planejamento de versionamento de API, e validação com potenciais casos de   │
+│  uso futuros.\n\n*   **De Negócio (geral, mas que a AL precisa estar ciente):**\n    *   **Não Redução Total de Tickets:** Se o problema  │
+│  raiz não for *apenas* a falta de informação, mas a *qualidade* ou *velocidade* da entrega em si, a redução de tickets pode não atingir   │
+│  80%. **Mitigação:** Medir a satisfação do cliente com a *informação* fornecida, e não apenas o volume de tickets. Compartilhar insights  │
+│  com o time de logística e operações.\n"                                                                                                  │
+│  }                                                                                                                                        │
+│                                                                                                                                           │
+│                                                                                                                                           │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+Crew output: {'research_points': [{'topic': 'Propósito e Evolução do PRD', 'findings': 'O PRD serve como a fonte única de verdade para as equipes, evoluindo do discovery à entrega. Ele facilita o alinhamento, promove a colaboração e testa o raciocínio sobre o produto. Deve ser adaptado à fase de desenvolvimento (briefing, especificação, completo).', 'relevance': 'Essencial para estruturar o documento de forma iterativa e garantir que ele atenda às necessidades de diferentes fases do projeto, servindo como um guia central para a equipe de Abstraction Layer e seus consumidores (times de produto).', 'sources': [{'document': 'Resumo da Página: Escrever e Atualizar PRDs', 'section': 'Visão Geral'}]}, {'topic': 'As 3 Fases do Desenvolvimento do PRD', 'findings': 'O guia de PRDs é dividido em três fases principais: 1) Briefing do Problema (descoberta), 2) Especificação de Produto (design), e 3) PRD Completo (entrega). Cada fase adiciona um nível de detalhe crescente.', 'relevance': 'Direciona a estruturação deste PRD, garantindo que ele progrida de uma visão de alto nível para detalhes de execução, conforme o ciclo de vida do produto. É a espinha dorsal da resposta.', 'sources': [{'document': 'Resumo da Página: Escrever e Atualizar PRDs', 'section': 'Os 3 Passos para Desenvolver um PRD'}]}, {'topic': 'Conteúdo do Briefing do Problema (Fase 1)', 'findings': 'Deve conter: Oportunidade (problema, público, porquê), Evidências (dados validadores), Métricas de Sucesso (quantitativas e qualitativas), Hipóteses de Solução e Design. O foco é entender o problema e obter feedback da liderança.', 'relevance': "Define a estrutura inicial da seção 'Contexto' do PRD, focando no 'porquê' e nos dados que justificam a iniciativa, crucial para o alinhamento de alto nível para a equipe de Abstraction Layer e stakeholders.", 'sources': [{'document': 'Resumo da Página: Escrever e Atualizar PRDs', 'section': 'Passo 1: Comece Definindo o Problema do Usuário'}, {'document': '[Fase 0: Modelo de resumo da definição do problema]', 'section': 'Espaço do problema, Clientes-alvo, Critérios de impacto e sucesso'}]}, {'topic': 'Conteúdo da Especificação de Produto (Fase 2)', 'findings': 'Inclui: Recapitulação do Problema, Escopo (Histórias de usuário, requisitos funcionais, o que está fora de escopo), Design (fluxo e protótipos), e Riscos (suposições e questões em aberto). Recomenda-se envolver design e engenharia.', 'relevance': "Moldou a seção 'Escopo da Solução' e a parte inicial de 'Design e Experiência', direcionando a criação de histórias de usuário e requisitos funcionais sob a ótica da Abstraction Layer (foco em APIs, não UI final).", 'sources': [{'document': 'Resumo da Página: Escrever e Atualizar PRDs', 'section': 'Passo 2: Expanda para uma Especificação de Produto (Product Spec)'}]}, {'topic': 'Conteúdo do PRD Completo (Fase 3)', 'findings': 'Deve ter: Recapitulação do Briefing, Escopo Atualizado, Design Final (detalhes para engenharia), Implicações Técnicas, Plano de Lançamento, Plano de Desenvolvimento e Riscos atualizados. Foco nos detalhes de execução.', 'relevance': "Essencial para as seções 'Detalhes de Execução' e 'Riscos', garantindo que o PRD contenha informações pragmáticas para a engenharia da Abstraction Layer, como dependências de sistemas legados, estratégias de integração e cronogramas.", 'sources': [{'document': 'Resumo da Página: Escrever e Atualizar PRDs', 'section': 'Passo 3: Expanda com Detalhes de Execução'}]}, {'topic': 'Escopo e Foco do Time de Abstraction Layer', 'findings': "Responsável por 'abstrair a complexidade técnica do core e fornecer uma interface simplificada para as equipes de produto', e 'criar soluções que sejam reutilizáveis e escaláveis, evitando soluções pontuais'. Evitar detalhes de implementação de engenharia.", 'relevance': 'Fundamental para a definição do que está *dentro* e *fora* do escopo deste PRD. Assegura que os requisitos funcionais e as implicações técnicas estejam alinhados com a missão da equipe, focando na API e normalização de dados, e não na UI.', 'sources': [{'document': 'Instrução da Tarefa', 'section': 'Restrições'}]}], 'summary': "## Documento de Requisitos de Produto (PRD): Melhoria na Experiência de Rastreamento de Pacotes\n\n**Iniciativa:** Rastreamento Transparente - Abstraction Layer\n\n**Product Manager:** [Seu Nome como PM Técnico da Abstraction Layer]\n\n**Data:** 13/07/2025\n\n### **1. Contexto (Briefing do Problema)**\n\nEste PRD visa detalhar os requisitos para a equipe de Abstraction Layer, que atuará como a camada fundamental para viabilizar a iniciativa de 'Rastreamento Transparente'. Nosso objetivo é transformar a complexidade de diversas fontes de dados de rastreamento em uma interface unificada e simplificada para as equipes de produto que consomem nossa plataforma.\n\n*   **Oportunidade (O Problema e o Porquê):**\n    A falta de clareza e a dificuldade na consulta do status de entregas geram atrito significativo na jornada do cliente. A Abstraction Layer tem a oportunidade de consolidar e normalizar os dados de rastreamento de múltiplos sistemas legados e transportadoras, oferecendo uma API coesa. Isso permitirá que as equipes de produto construam experiências de rastreamento proativas e intuitivas, reduzindo a ansiedade do cliente e o custo operacional.\n\n*   **Público-Alvo:**\n    *   **Clientes Internos Primários:** Equipes de Produto (e.g., Mobile, Web) que precisam de dados de rastreamento para criar as interfaces de usuário finais. Equipe de Suporte ao Cliente, que se beneficiará da redução do volume de tickets.\n    *   **Clientes Finais (Usuários da Plataforma):** Pessoas que fizeram compras e desejam acompanhar suas entregas de forma simples e transparente.\n\n*   **Evidências:**\n    *   **Causa Raiz:** 75% dos tickets de suporte atuais estão relacionados a dúvidas sobre entrega ('Onde está meu pacote?', 'Qual o status da minha entrega?').\n    *   **Impacto no Negócio:** Alto custo operacional com o time de suporte e impacto negativo na percepção da marca, resultando em menor chance de recompra.\n\n*   **Métricas de Sucesso (KPIs da Iniciativa - que serão habilitadas pela Abstraction Layer):**\n    *   **Métrica Primária:** Redução de, no mínimo, 80% no volume de reclamações e tickets de suporte relacionados ao status de encomendas após 30 dias do lançamento da interface de usuário habilitada pela Abstraction Layer.\n    *   **Métrica Secundária:** Aumento do CSAT (Customer Satisfaction Score) relacionado à experiência de entrega.\n    *   **Métrica de Engajamento:** Aumento no número de usuários únicos que acessam a tela 'Meus Pacotes' por semana (a ser monitorado pela equipe de produto front-end).\n    *   **Métricas de Plataforma (Internas da Abstraction Layer):** Tempo médio de resposta da API de rastreamento < 200ms; Uptime da API > 99.9%; Número de erros nas integrações com sistemas legados < 0.1%.\n\n### **2. Escopo da Solução (Especificação do Produto)**\n\nA equipe de Abstraction Layer será responsável por criar e manter uma camada de serviço que abstrai a complexidade dos sistemas de rastreamento subjacentes, fornecendo APIs padronizadas e performáticas para consumo pelas equipes de produto.\n\n*   **Requisitos Funcionais e Histórias de Usuário (Perspectiva da Abstraction Layer):**\n    *   **Como equipe de Produto (front-end), eu quero consultar uma lista de pacotes de um usuário** (ativos e recém-concluídos), **para que eu possa exibir uma visão geral consolidada.**\n        *   **API:** `GET /v1/users/{userId}/packages`\n        *   **Response (Lista de Pacotes):**\n            *   `package_id` (Identificador único do pacote na plataforma)\n            *   `order_number` (Número do pedido ao qual o pacote pertence)\n            *   `purchase_date` (Data da compra do pedido)\n            *   `simplified_status` (String padronizada: 'Em trânsito', 'Saiu para entrega', 'Entregue', 'Aguardando Coleta', 'Problema na Entrega', etc.)\n            *   `last_update_timestamp` (Timestamp da última atualização do status)\n    *   **Como equipe de Produto (front-end), eu quero consultar os detalhes completos e o histórico de rastreamento de um pacote específico, para que eu possa exibir uma visão detalhada e uma linha do tempo clara.**\n        *   **API:** `GET /v1/packages/{packageId}/tracking`\n        *   **Response (Detalhes do Pacote):**\n            *   `package_id`\n            *   `order_number`\n            *   `purchase_date`\n            *   `simplified_status`\n            *   `delivery_address` (Endereço completo de entrega)\n            *   `tracking_code` (Código de rastreio completo da transportadora)\n            *   `tracking_history` (Array de objetos, ordenada da mais recente para mais antiga):\n                *   `timestamp` (Data e Hora do evento)\n                *   `location` (Localização, ex: 'Centro de Distribuição, Cajamar - SP')\n                *   `detailed_status` (Status detalhado original da transportadora, ex: 'Objeto postado', 'Objeto em trânsito para a unidade de tratamento')\n    *   **Como Abstraction Layer, eu preciso me integrar com múltiplas fontes de dados de rastreamento** (e.g., Correios, Transportadora X, Transportadora Y, ERP interno de entregas), **para consolidar e normalizar as informações.**\n    *   **Como Abstraction Layer, eu preciso normalizar os status de rastreamento de diferentes fontes para um conjunto de 'simplified_status' padrão,** para garantir consistência para as equipes de produto.\n    *   **Como Abstraction Layer, eu preciso garantir alta disponibilidade e baixa latência das APIs,** para não impactar a experiência do usuário final.\n    *   **Como Abstraction Layer, eu preciso ter um mecanismo de cache eficiente** para otimizar a performance e reduzir a carga sobre os sistemas legados.\n\n*   **O que está Fora de Escopo (para a Equipe de Abstraction Layer):**\n    *   A implementação da interface do usuário (UI) da tela 'Meus Pacotes' ou qualquer outra tela do produto final. Isso é responsabilidade das equipes de produto (Mobile/Web).\n    *   A ativação de notificações proativas (e.g., SMS, e-mail, push notifications) sobre o status do rastreamento. A Abstraction Layer fornecerá os dados, mas a lógica e o disparo das notificações são de outros times.\n    *   Rastreamento de pedidos não vinculados a um usuário logado ou via mecanismos de busca pública de rastreio.\n    *   Funcionalidades além do rastreamento puro, como agendamento de entrega, re-envio, alteração de endereço ou resolução de problemas de entrega (que não seja a informação do status).\n    *   Integração com novas transportadoras que não sejam as identificadas como prioritárias na fase inicial de descoberta.\n\n### **3. Design e Experiência (Foco na API e Modelo de Dados)**\n\nNesta seção, o 'design' refere-se primariamente ao design da API (contratos, modelos de dados) e não à interface do usuário final, que é responsabilidade do time de produto front-end que consumirá esta camada.\n\n*   **Fluxo da Experiência do Consumidor (da API):**\n    1.  Equipe de produto (front-end) autentica-se na Abstraction Layer.\n    2.  Equipe de produto chama `GET /v1/users/{userId}/packages` para obter a lista de pacotes.\n    3.  Equipe de produto renderiza a lista de pacotes com o `simplified_status`.\n    4.  Quando o usuário final clica em um pacote na UI, a equipe de produto chama `GET /v1/packages/{packageId}/tracking`.\n    5.  Equipe de produto renderiza os detalhes e o `tracking_history` em uma linha do tempo na UI, sem recarregar a página.\n\n*   **Protótipos e Design Final (Contratos de API e Modelos de Dados):**\n    *   Serão definidos e versionados os contratos OpenAPI/Swagger para as APIs acima, incluindo schemas JSON detalhados para requisições e respostas.\n    *   Exemplo de `simplified_status` map: mapeamento de status brutos de diversas transportadoras para um conjunto finito de estados padronizados (e.g., 'Postado' -> 'Em Trânsito', 'Saiu para entrega' -> 'Saiu para Entrega'). Este mapeamento será uma responsabilidade da Abstraction Layer.\n    *   Exemplos de payloads JSON serão fornecidos para facilitar o desenvolvimento e testes das equipes de produto consumidoras.\n    *   Definição de códigos de erro padronizados e mensagens claras para as APIs da Abstraction Layer.\n\n### **4. Detalhes de Execução**\n\n*   **Implicações Técnicas e Dependências (para Abstraction Layer):**\n    *   **Identificação de Fontes:** Mapeamento completo e priorização das fontes de dados de rastreamento existentes (e.g., sistema ERP legado, APIs de Correios, APIs de Transportadoras Parceiras).\n    *   **Conectores/Adaptadores:** Desenvolvimento de módulos independentes para cada fonte de dados, capazes de consumir diferentes formatos (REST, SOAP, FTP de arquivos, DB direct access, etc.) e traduzir para o modelo de dados canônico da Abstraction Layer.\n    *   **Modelo de Dados Canônico:** Definição rigorosa de um modelo de dados interno para eventos de rastreamento, endereços, status, etc., que será a base para a normalização.\n    *   **Lógica de Normalização:** Implementação de regras de negócio para padronizar os `simplified_status` e consolidar informações de diferentes fontes para um mesmo pacote.\n    *   **Performance e Escalabilidade:** Implementação de estratégias de cache (e.g., Redis) para dados de rastreamento frequentemente acessados e de mecanismo de *rate limiting* e *circuit breaker* para proteção contra sobrecarga dos sistemas legados.\n    *   **Autenticação/Autorização:** Implementação de mecanismos seguros para que as equipes de produto possam consumir as APIs (e.g., OAuth2, API Keys).\n    *   **Monitoramento:** Configuração de métricas de performance (latência, erros, volume de requisições) e logs detalhados para cada integração e endpoint da API.\n    *   **Versionamento de API:** Plano para versionamento (`/v1/`) para permitir futuras evoluções sem quebrar os consumidores existentes.\n    *   **Dependências:**\n        *   **Equipe de Core/Sistemas Legados:** Necessidade de acesso e documentação das APIs/Bancos de dados dos sistemas de rastreamento existentes. Acordos de SLA para disponibilidade e performance das fontes de dados.\n        *   **Equipe de Produto Front-end:** Colaboração para validação dos contratos de API e cronograma de consumo.\n        *   **Equipe de Dados/Analytics:** Definição conjunta de eventos de telemetria para as métricas de sucesso.\n\n*   **Plano de Lançamento (Go-to-Market - GTM):**\n    *   **Fase 1 (Alpha Interna):** Lançamento das APIs para consumo por uma equipe de produto piloto para validação inicial e feedback. (Mês 3)\n    *   **Fase 2 (Beta Controlada):** Liberação da nova experiência de rastreamento (habilitada pela Abstraction Layer) para um grupo de usuários selecionados (e.g., 5-10% da base), com monitoramento intensivo das métricas de negócio e plataforma. (Mês 4)\n    *   **Fase 3 (Lançamento Completo):** Rollout gradual para 100% da base de usuários, monitorando continuamente o impacto nas métricas de suporte e CSAT. (Mês 5)\n    *   **Comunicação:** Elaboração de documentação técnica clara e exemplos de uso para as equipes de produto consumidoras. Treinamento para o time de suporte sobre as novas capacidades de rastreamento.\n\n*   **Plano de Desenvolvimento (Marcos Principais):**\n    *   **Mês 1:** Discovery técnico detalhado das fontes de dados de rastreamento legadas. Definição do Modelo de Dados Canônico e Contratos de API iniciais (Alpha).\n    *   **Mês 2:** Desenvolvimento e testes de conectores para as 2-3 transportadoras/sistemas legados de maior volume de pacotes. Implementação da API de listagem de pacotes (`/v1/users/{userId}/packages`).\n    *   **Mês 3:** Implementação da API de detalhes de rastreamento (`/v1/packages/{packageId}/tracking`). Implementação da lógica de normalização de status e cache. Início dos testes de integração com a equipe de produto piloto.\n    *   **Mês 4:** Refinamento e otimização de performance. Testes de carga e segurança. Preparação para lançamento Beta.\n    *   **Mês 5:** Lançamento gradual para produção e monitoramento pós-lançamento.\n\n### **5. Riscos**\n\n*   **Técnicos:**\n    *   **Qualidade e Disponibilidade dos Dados Legados:** As fontes de dados de rastreamento existentes podem ser inconsistentes, incompletas ou ter baixa disponibilidade, impactando a confiabilidade da Abstraction Layer. **Mitigação:** Investimento em monitoramento proativo das fontes, implementação de retries e fallback strategies, comunicação clara de limitações para os times de produto.\n    *   **Complexidade da Normalização:** A variação de status e formatos entre as transportadoras pode ser maior que o esperado, exigindo lógica de normalização complexa e sujeita a erros. **Mitigação:** Abordagem iterativa de normalização, começando com os casos mais comuns e refinando com feedback, uso de testes automatizados extensivos para mapeamentos.\n    *   **Performance da Agregação:** A agregação de dados de múltiplas fontes para um único pacote pode gerar latência indesejável. **Mitigação:** Implementação de estratégias de cache agressivas, otimização de consultas e avaliação de tecnologias de processamento de dados em tempo real, se necessário.\n    *   **Dependência de Terceiros:** Mudanças inesperadas nas APIs ou serviços das transportadoras podem quebrar as integrações da Abstraction Layer. **Mitigação:** Monitoramento constante das APIs de terceiros, notificação sobre mudanças de contrato, e design de adaptadores flexíveis.\n\n*   **De Produto (para Abstraction Layer):**\n    *   **Adoção Lenta da API:** As equipes de produto podem demorar a adotar a nova API devido a outras prioridades ou complexidade de migração. **Mitigação:** Documentação excelente, suporte dedicado, showcases e alinhamento de roadmap.\n    *   **Modelo de Dados Inflexível:** O modelo de dados canônico pode não ser robusto o suficiente para futuras funcionalidades ou novas fontes de dados. **Mitigação:** Design de modelo extensível, planejamento de versionamento de API, e validação com potenciais casos de uso futuros.\n\n*   **De Negócio (geral, mas que a AL precisa estar ciente):**\n    *   **Não Redução Total de Tickets:** Se o problema raiz não for *apenas* a falta de informação, mas a *qualidade* ou *velocidade* da entrega em si, a redução de tickets pode não atingir 80%. **Mitigação:** Medir a satisfação do cliente com a *informação* fornecida, e não apenas o volume de tickets. Compartilhar insights com o time de logística e operações.\n"}
+Crew usage metrics:
+total_tokens=12035 prompt_tokens=3425 cached_prompt_tokens=0 completion_tokens=8610 successful_requests=1

@@ -1,0 +1,27 @@
+analysis_task:
+  description: >
+    Analise detalhadamente o problema de negócio recebido: {problem}.
+    Sua tarefa é evoluir a compreensão do problema em um PRD completo, seguindo o processo de 3 etapas da nossa base de conhecimento:
+    1.  **Briefing do Problema:** Comece definindo a oportunidade, o público, as evidências e as métricas de sucesso iniciais para alinhar com a liderança.
+    2.  **Especificação do Produto:** Colabore com design e engenharia para detalhar o escopo, com histórias de usuário, requisitos funcionais e protótipos.
+    3.  **PRD Completo:** Finalize o documento com detalhes de execução, como o design final, implicações técnicas e um plano de lançamento.
+    Consulte ativamente os documentos da base de conhecimento para guiar a estrutura e o conteúdo em cada fase.
+  expected_output: >
+    Um Documento de Requisitos de Produto (PRD) completo e bem estruturado, refletindo a evolução da fase de descoberta até a entrega. O documento final deve conter as seguintes seções:
+    - **Contexto:**
+        - Oportunidade (O problema a ser resolvido, para qual público e por quê).
+        - Evidências (Dados que validam a oportunidade).
+        - Métricas de Sucesso (KPIs quantitativos e qualitativos).
+    - **Escopo da Solução:**
+        - Requisitos Funcionais e Histórias de Usuário.
+        - O que está Fora de Escopo.
+    - **Design e Experiência:**
+        - Fluxo da Experiência do Usuário.
+        - Protótipos e Design Final.
+    - **Detalhes de Execução:**
+        - Implicações Técnicas e Dependências.
+        - Plano de Lançamento (GTM).
+        - Plano de Desenvolvimento (marcos principais).
+    - **Riscos:**
+        - Suposições a serem testadas e riscos em aberto.
+  agent: product_manager
